@@ -1,0 +1,31 @@
+<footer>
+    <div class="footer-content" style="background-color: {{ section.settings.footer_background_color }}; color: {{ section.settings.footer_text_color }};">
+        <p>{{ section.settings.footer_text }}</p>
+    </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "footer_text",
+      "label": "Footer Text",
+      "default": "© 2024 Your Company. All rights reserved."
+    },
+    {
+      "type": "color",
+      "id": "footer_background_color",
+      "label": "Footer Background Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "footer_text_color",
+      "label": "Footer Text Color",
+      "default": "#ffffff"
+    }
+  ]
+}
+{% endschema %}

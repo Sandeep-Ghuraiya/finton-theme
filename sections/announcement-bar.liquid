@@ -1,0 +1,27 @@
+{% style %}
+    
+{% endstyle %}
+
+<div>
+  <p>{{ section.settings.announcement_text }}</p>
+</div>
+
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "announcement_text",
+      "label": "Announcement Text",
+      "default": "Free shipping on orders over $50!"
+    },
+    {
+      "type": "color",
+      "id": "announcement_color",
+      "label": "Announcement Color",
+      "default": "#ff0000"
+    }
+  ]
+}
+{% endschema %}
