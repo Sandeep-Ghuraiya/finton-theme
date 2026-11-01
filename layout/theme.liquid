@@ -17,16 +17,13 @@
 
 
 
-    {% comment %} {% sections 'header-group' %} {% endcomment %}
-     <header>
-      <p>This is a statging theme</p>
-     </header>
+    {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 
-    {% comment %} {% sections 'footer-group' %} {% endcomment %}
+    {% sections 'footer-group' %}
 
   </body>
 </html>
